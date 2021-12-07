@@ -19,20 +19,22 @@
 		
 		<h1 class="marquee"><span>Welcome to the Department of Mechatronics Engineering, FUNAAB!</span></h1>
 
-		<div class="login-box" action = "" name = "myForm" onsubmit="return validateform()">
-			<h2>Login</h2>
-				<div class="textbox">
-					<i class="fa fa-user" aria-hidden="true"></i>
-					<input type="text" placeholder="Matric no" maxlength="8" name="matricNo" title="Numbers only, please." />
-				</div>			
-				&nbsp;
-				<div class="textbox">
-					<i class="fa fa-lock" aria-hidden="true"></i>
-					<input type="password" placeholder="Password" maxlength="7" name="password" />
-				</div>
-				
-				<p id="demo" style="color:red; text-align:center"></p>	
-				<input class="btn" type="submit" value="Sign in" />
+		<div class="login-box">
+			<form action="" name="myForm">
+				<h2>Login</h2>
+					<div class="textbox">
+						<i class="fa fa-user" aria-hidden="true"></i>
+						<input type="text" placeholder="Matric no" maxlength="8" name="matricNo" title="Numbers only, please." />
+					</div>			
+					&nbsp;
+					<div class="textbox">
+						<i class="fa fa-lock" aria-hidden="true"></i>
+						<input type="password" placeholder="Password" maxlength="7" name="password" />
+					</div>
+					
+					<p id="demo" style="color:red; text-align:center"></p>	
+					<input class="btn" type="button" value="Sign in" onclick="validateform()"/>
+			</form>
 		</div>
 
 		<footer id="main-footer">

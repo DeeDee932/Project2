@@ -1,4 +1,5 @@
 function validateform(){
+    console.log("Called. ")
     var matricNo = document.myForm.matricNo.value;  
     var password = document.myForm.password.value; 
     var text;
@@ -24,5 +25,8 @@ function validateform(){
         document.myForm.password.focus();
         return false;
     }
+    
+    text = "";
+    document.getElementById("demo").innerHTML = text;
     return( true );
 }
